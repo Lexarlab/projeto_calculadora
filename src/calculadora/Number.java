@@ -2,15 +2,33 @@ package calculadora;
 
 public class Number {
 	
-	private int value;
-	public Number() {
-		this.value=0;
+	private double x;
+	
+	private double getX() {
+		return this.x;
 	}
-	public void setValue(int value) {
-		this.value = value;
+	
+	private void setX(double x) {
+		this.x = x;
 	}
-	public int getValue() {
-		return this.value;
+	
+	public double sum (double x, double y){
+		setX(x + y);
+		return getX();
 	}
-
+	
+	public double subtraction (double x, double y){
+		setX(x - y);
+		return getX();
+	}
+	
+	public double multiplication (double x, double y){
+		setX(x * y);
+		return getX();
+	}
+	
+	public double division (double value1, double y){
+		setX(x / y);
+		return getX();
+	}
 }
